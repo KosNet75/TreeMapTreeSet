@@ -43,7 +43,7 @@ public class Person {
   // создайте toString
   @Override
   public String toString() {
-    return "<- [" + name + " " +
+    return "\n[" + name + " " +
         surname + " " +
         " " + age + "]";
   }
