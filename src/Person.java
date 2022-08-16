@@ -1,5 +1,3 @@
-import java.util.HashMap;
-import java.util.Map;
 
 public class Person {
 
@@ -45,9 +43,9 @@ public class Person {
   // создайте toString
   @Override
   public String toString() {
-    return "| " + name + " " +
+    return "<- [" + name + " " +
         surname + " " +
-        " " + age + " |";
+        " " + age + "]";
   }
 
 }
