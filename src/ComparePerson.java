@@ -10,17 +10,12 @@ public class ComparePerson<o extends Person> implements Comparator<Person> {
 
   @Override
   public int compare(Person o1, Person o2) {
-    int wordCount1 = 0;
-    int wordCount2 = 0;
 
     String[] words = o1.getSurname().split("-");
-    for (String ignored : words) {
-      wordCount1++;
-    }
+    int wordCount1 = words.length;
     String[] words1 = o2.getSurname().split("-");
-    for (String ignored : words1) {
-      wordCount2++;
-    }
+    int wordCount2 = words1.length;
+
     if (wordCount1 > maxSize) {
       wordCount1 = maxSize;
     }
