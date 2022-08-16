@@ -21,7 +21,7 @@ public class Main {
     //Collections.sort(person, new ComparePerson<>(4));
     person.sort(new ComparePerson<>(3));
     System.out.println();
-    System.out.println("Рейтинг:" + person);
+    System.out.println("Рейтинг по убыванию:" + person);
 
   }
 
