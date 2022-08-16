@@ -20,7 +20,5 @@ public class Main {
     person.sort(new ComparePerson<>(3));
     System.out.println();
     System.out.println("Рейтинг по убыванию:" + person);
-
   }
-
 }
