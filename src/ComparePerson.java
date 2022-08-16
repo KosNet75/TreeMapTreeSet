@@ -34,8 +34,6 @@ public class ComparePerson<o extends Person> implements Comparator<Person> {
       }
       return 0;
     }
-
   }
-
 }
 

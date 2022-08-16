@@ -16,8 +16,6 @@ public class Main {
     person.add(new Person("Елизавета", "Боярская", 36));
     person.add(new Person("Megan", "Fox", 36));
 
-
-
     //Collections.sort(person, new ComparePerson<>(4));
     person.sort(new ComparePerson<>(3));
     System.out.println();
