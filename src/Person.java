@@ -45,7 +45,7 @@ public class Person {
   public String toString() {
     return "\n[" + name + " " +
         surname + " " +
-        " " + age + "]";
+        "   возраст:" + age + "]";
   }
 
 }
