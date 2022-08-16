@@ -15,44 +15,38 @@ public class Person {
     this.surname = surname;
     this.age = age;
 
-
   }
 
-
-
-
-
-  public<o> String getName() {
+  public <o> String getName() {
     return name;
   }
-
 
   // создайте геттеры и сеттеры
 
   public<o> void setName(String name) {
-    this.name = name;
-  }
+     this.name = name;
+   }
 
-  public <o>  String getSurname() {
+  public <o> String getSurname() {
     return surname;
   }
 
-  public<o> void setSurname(String surname) {
-    this.surname = surname;
-  }
+   public<o> void setSurname(String surname) {
+     this.surname = surname;
+   }
 
-  public<o> int getAge() {
+  public <o> int getAge() {
     return age;
   }
 
-  public<o> void setAge(int age) {
-    this.age = age;
+   public<o> void setAge(int age) {
+     this.age = age;
   }
 
   // создайте toString
   @Override
   public String toString() {
-    return "| " + name +" "+
+    return "| " + name + " " +
         surname + " " +
         " " + age + " |";
   }
