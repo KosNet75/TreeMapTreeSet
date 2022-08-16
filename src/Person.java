@@ -17,29 +17,29 @@ public class Person {
 
   }
 
-  public <o> String getName() {
+  public String getName() {
     return name;
   }
 
   // создайте геттеры и сеттеры
 
-  public<o> void setName(String name) {
+  public void setName(String name) {
      this.name = name;
    }
 
-  public <o> String getSurname() {
+  public String getSurname() {
     return surname;
   }
 
-   public<o> void setSurname(String surname) {
+   public void setSurname(String surname) {
      this.surname = surname;
    }
 
-  public <o> int getAge() {
+  public int getAge() {
     return age;
   }
 
-   public<o> void setAge(int age) {
+   public void setAge(int age) {
      this.age = age;
   }
 
