@@ -13,11 +13,11 @@ public class ComparePerson<o extends Person> implements Comparator<Person> {
     int wordCount1 = 0;
     int wordCount2 = 0;
     String[] words = o1.getSurname().split("-");
-    for (String word : words) {
+    for (String ignored : words) {
       wordCount1++;
     }
     String[] words1 = o2.getSurname().split("-");
-    for (String word : words1) {
+    for (String ignored : words1) {
       wordCount2++;
     }
     if (wordCount1 > maxSize) {
