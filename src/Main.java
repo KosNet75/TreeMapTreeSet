@@ -18,8 +18,8 @@ public class Main {
        person.add(new Person("Lindsay","Lohan",36));
 
 
-
-     Collections.sort(person, new ComparePerson<>(4));
+    //Collections.sort(person, new ComparePerson<>(4));
+     person.sort(new ComparePerson<>(4));
      System.out.println(person);
 
   }
