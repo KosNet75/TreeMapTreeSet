@@ -14,7 +14,6 @@ public class Person {
     this.name = name;
     this.surname = surname;
     this.age = age;
-
   }
 
   public String getName() {
