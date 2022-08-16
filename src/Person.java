@@ -21,23 +21,23 @@ public class Person {
   // создайте геттеры и сеттеры
 
   public void setName(String name) {
-     this.name = name;
-   }
+    this.name = name;
+  }
 
   public String getSurname() {
     return surname;
   }
 
-   public void setSurname(String surname) {
-     this.surname = surname;
-   }
+  public void setSurname(String surname) {
+    this.surname = surname;
+  }
 
   public int getAge() {
     return age;
   }
 
-   public void setAge(int age) {
-     this.age = age;
+  public void setAge(int age) {
+    this.age = age;
   }
 
   // создайте toString

@@ -12,6 +12,7 @@ public class ComparePerson<o extends Person> implements Comparator<Person> {
   public int compare(Person o1, Person o2) {
     int wordCount1 = 0;
     int wordCount2 = 0;
+
     String[] words = o1.getSurname().split("-");
     for (String ignored : words) {
       wordCount1++;
@@ -33,7 +34,6 @@ public class ComparePerson<o extends Person> implements Comparator<Person> {
     } else {
       return Integer.compare(o1.getAge(), o2.getAge());
     }
-
 
   }
 
