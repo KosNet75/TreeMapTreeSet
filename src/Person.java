@@ -44,8 +44,7 @@ public class Person {
   @Override
   public String toString() {
     return "\n[" + name + " " +
-        surname + " " +
-        "   возраст:" + age + "]";
+        surname + " " + "   возраст:" + age + "]";
   }
 
 }
