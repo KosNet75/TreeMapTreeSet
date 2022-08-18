@@ -1,7 +1,5 @@
 
-import java.util.LinkedList;
-import java.util.Set;
-import java.util.TreeMap;
+import java.util.NavigableSet;
 import java.util.TreeSet;
 
 
@@ -9,11 +7,12 @@ public class Main {
 
   public static  void main(String[] args) {
 
-  LinkedList<Person> person = new LinkedList<>();
+ // LinkedList<Person> person = new LinkedList<>();
 
 
-   // PersonComparator pcomp = new PersonComparator();
-   // TreeSet<Person> people = new TreeSet<Person>(pcomp);
+    ComparePerson sort = new ComparePerson(3);
+    TreeSet<Person> person = new TreeSet<Person>(sort);
+
 
 
 
@@ -27,15 +26,23 @@ public class Main {
     person.add(new Person("Георгий", "Тесля-Герасимов", 45));
     person.add(new Person("Анна", "Цуканова-Котт", 33));
 
+
+
+
     //Collections.sort(person, new ComparePerson<>(4));
-    person.sort(new ComparePerson<>(2));
+     // person.sort(new ComparePerson<>(2));
+
+
+
+
+
+
+
     System.out.println();
     System.out.println("Рейтинг по убыванию, сверху вниз: " + person);
 
-
-
-
-
+    NavigableSet<Person> navSet = person.descendingSet();
+    System.out.println(navSet);
 
 
 

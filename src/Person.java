@@ -1,7 +1,7 @@
 public class Person {
 
  // private int id;
-  //  Map<String, Integer> map = new HashMap<>();
+
   private String name;
   private String surname;
   private int age;
@@ -15,11 +15,13 @@ public class Person {
    // this.id = id;
   }
 
+
+
+  // создайте геттеры и сеттеры
+
   public String getName() {
     return name;
   }
-
-  // создайте геттеры и сеттеры
 
   public void setName(String name) {
     this.name = name;
