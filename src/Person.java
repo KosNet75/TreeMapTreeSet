@@ -1,6 +1,7 @@
 
 public class Person {
 
+ // private int id;
   //  Map<String, Integer> map = new HashMap<>();
   private String name;
   private String surname;
@@ -12,6 +13,7 @@ public class Person {
     this.name = name;
     this.surname = surname;
     this.age = age;
+   // this.id = id;
   }
 
   public String getName() {
