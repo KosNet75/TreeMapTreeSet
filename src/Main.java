@@ -5,7 +5,7 @@ public class Main {
 
   public static void main(String[] args) {
 
-    ComparePerson<Person> sortPerson = new ComparePerson<>(2);
+    ComparePerson sortPerson = new ComparePerson(2);
     TreeSet<Person> person = new TreeSet<>(sortPerson);
 
     person.add(new Person("Владимир", "Немирович-Данченко", 84));

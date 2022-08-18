@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ComparePerson<o extends Person> implements Comparator<Person> {
+public class ComparePerson implements Comparator<Person> {
 
   int maxSize;
 
