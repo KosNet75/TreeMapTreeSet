@@ -22,13 +22,13 @@ public class ComparePerson implements Comparator<Person> {
     if (wordCount2 > maxSize) {
       wordCount2 = maxSize;
     }
-    if (wordCount1 > wordCount2) {
-      return 1;
-    } else if (wordCount1 < wordCount2) {
-      return -1;
-    } else {
-      return Integer.compare(o1.getAge(), o2.getAge());
+
+    if (wordCount1 > wordCount2 || wordCount1 < wordCount2){
+      return wordCount1 > wordCount2 ? 1 : -1;
     }
+
+      return Integer.compare(o1.getAge(), o2.getAge());
+//    }
   }
 }
 
