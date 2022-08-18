@@ -8,7 +8,7 @@ public class ComparePerson<o extends Person> implements Comparator<Person> {
     this.maxSize = maxSize;
   }
 
-  @Override
+  //@Override
   public int compare(Person o1, Person o2) {
 
     String[] words1 = o1.getSurname().split("-");
@@ -35,7 +35,9 @@ public class ComparePerson<o extends Person> implements Comparator<Person> {
       return 0;
     }
   }
-}
+
+  }
+
 
 
 
