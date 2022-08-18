@@ -5,16 +5,10 @@ import java.util.TreeSet;
 
 public class Main {
 
-  public static  void main(String[] args) {
+  public static void main(String[] args) {
 
- // LinkedList<Person> person = new LinkedList<>();
-
-
-    ComparePerson sort = new ComparePerson(3);
-    TreeSet<Person> person = new TreeSet<Person>(sort);
-
-
-
+    ComparePerson<Person> sortPerson = new ComparePerson<>(2);
+    TreeSet<Person> person = new TreeSet<>(sortPerson);
 
     person.add(new Person("Владимир", "Немирович-Данченко", 84));
     person.add(new Person("Александр", "Голенищев-Кутузов-Смоленский", 67));
@@ -26,26 +20,8 @@ public class Main {
     person.add(new Person("Георгий", "Тесля-Герасимов", 45));
     person.add(new Person("Анна", "Цуканова-Котт", 33));
 
-
-
-
-    //Collections.sort(person, new ComparePerson<>(4));
-     // person.sort(new ComparePerson<>(2));
-
-
-
-
-
-
-
-    System.out.println();
-    System.out.println("Рейтинг по убыванию, сверху вниз: " + person);
-
-    NavigableSet<Person> navSet = person.descendingSet();
-    System.out.println(navSet);
-
-
-
+    NavigableSet<Person> PersonBack = person.descendingSet();
+    System.out.println("\nРейтинг по убыванию сверху вниз: " + PersonBack);
 
   }
 }

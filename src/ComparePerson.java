@@ -8,7 +8,7 @@ public class ComparePerson<o extends Person> implements Comparator<Person> {
     this.maxSize = maxSize;
   }
 
-  //@Override
+  @Override
   public int compare(Person o1, Person o2) {
 
     String[] words1 = o1.getSurname().split("-");
@@ -23,20 +23,15 @@ public class ComparePerson<o extends Person> implements Comparator<Person> {
       wordCount2 = maxSize;
     }
     if (wordCount1 > wordCount2) {
-      return -1;
-    } else if (wordCount1 < wordCount2) {
       return 1;
+    } else if (wordCount1 < wordCount2) {
+      return -1;
     } else {
-      if (o1.getAge() > o2.getAge()) {
-        return -1;
-      } else if (o1.getAge() < o2.getAge()) {
-        return 1;
-      }
-      return 0;
+      return Integer.compare(o1.getAge(), o2.getAge());
     }
-  }
 
   }
+}
 
 
 

@@ -1,6 +1,5 @@
 public class Person {
 
- // private int id;
 
   private String name;
   private String surname;
@@ -12,10 +11,7 @@ public class Person {
     this.name = name;
     this.surname = surname;
     this.age = age;
-   // this.id = id;
   }
-
-
 
   // создайте геттеры и сеттеры
 
@@ -47,7 +43,7 @@ public class Person {
   @Override
   public String toString() {
     return "\n[" + name + " " +
-        surname + " " + "   возраст:" + age + "]";
+        surname + " " + "   возраст: " + age + "]";
   }
 
 }
