@@ -29,7 +29,6 @@ public class ComparePerson<o extends Person> implements Comparator<Person> {
     } else {
       return Integer.compare(o1.getAge(), o2.getAge());
     }
-
   }
 }
 
