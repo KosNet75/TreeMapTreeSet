@@ -23,7 +23,7 @@ public class ComparePerson implements Comparator<Person> {
       wordCount2 = maxSize;
     }
 
-    if (wordCount1 > wordCount2 || wordCount1 < wordCount2){
+    if (wordCount1 > wordCount2 || wordCount1 < wordCount2) {
       return wordCount1 > wordCount2 ? 1 : -1;
     }
 
