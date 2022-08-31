@@ -11,13 +11,10 @@ public class Main {
 
     person.add(new Person("Владимир", "Немирович-Данченко", 84));
     person.add(new Person("Александр", "Голенищев-Кутузов-Смоленский", 67));
-    person.add(new Person("Elizabeth II", "Alexandra-Mary-Windsor", 96));
-    person.add(new Person("Анна", "Ковальчук", 45));
-    person.add(new Person("Михаил", "Салтыков-Щедрин", 63));
-    person.add(new Person("Елизавета", "Боярская", 36));
-    person.add(new Person("Сергей", "Капица", 84));
     person.add(new Person("Георгий", "Тесля-Герасимов", 45));
     person.add(new Person("Анна", "Цуканова-Котт", 33));
+    person.add(new Person("Алина", "Иванцова", 17));
+    person.add(new Person("Петр", "Заречный", 15));
 
     NavigableSet<Person> PersonBack = person.descendingSet();
     System.out.println("\nРейтинг по убыванию сверху вниз: " + PersonBack);
