@@ -1,5 +1,6 @@
 import java.util.NavigableSet;
 import java.util.TreeSet;
+import java.util.function.Predicate;
 
 public class Main {
 
@@ -20,6 +21,11 @@ public class Main {
 
     NavigableSet<Person> PersonBack = person.descendingSet();
     System.out.println("\nРейтинг по убыванию сверху вниз: " + PersonBack);
+
+    System.out.println("\nУдалены лица менее 18 лет:");
+    Predicate<Person> teen = x -> x.getAge() < 18;
+    person.removeIf(teen);
+    System.out.println(person.descendingSet());
 
   }
 }
