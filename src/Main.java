@@ -3,7 +3,6 @@ import java.util.NavigableSet;
 import java.util.TreeSet;
 
 public class Main {
-
   public static void main(String[] args) {
 
     Comparator<Person> sortPerson = (o1, o2) -> {
